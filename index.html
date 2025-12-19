@@ -18,6 +18,19 @@
         color="yellow"
         gps-entity-place="latitude: 39.279214882574834; longitude: -84.27583143884306;"
       ></a-box>
+      <a-cyllinder
+        height="1"
+        radius="0.25"
+        color="cyan"
+        gps-entity-place="latitude: 39.27956993308663; longitude: -84.27584284821785;"
+      ></a-cyllinder>
+      <!-- Load the Blender file -->
+		<a-assets>
+			<a-asset-item id="myModel" src="Cello.glb"></a-asset-item>
+		</a-assets>
+		
+		<!-- Display as AR element -->
+		<a-entity gltf-model="#myModel" gps-entity-place="latitude: 39.27957833341122; longitude: -84.27493414125347;"></a-entity>
     </a-scene>
   </body>
 </html>
